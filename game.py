@@ -24,6 +24,18 @@ valid_options = ["rock", "paper", "scissors"]
 computer_choice = random.choice(valid_options)
 print("computer_choice:", computer_choice)
 
+if (user_choice == "rock") and (computer_choice == "scissors"):
+    print("USER WINS")
+elif (user_choice == "paper") and (computer_choice == "rock"):
+    print("USER WINS")
+elif(user_choice == "scissors") and (computer_choice == "paper"):
+    print("USER WINS")
+elif (user_choice == computer_choice):
+    print("TIE")
+else:
+    print("COMPUTER WINS")
+
+
 
 
 print("this is the end of our game.  please play again")
