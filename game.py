@@ -2,6 +2,18 @@
 
 import random
 
+import os
+
+import dotenv
+
+dotenv.load_dotenv()
+
+PLAYER_NAME = os.getenv("Player_Name")
+print(PLAYER_NAME)
+
+
+
+
 print("Welcome to Rock, Paper, Scissors, Shoot Player One!")
 
 user_choice = input("Please choose one of 'rock', 'paper', 'scissors':")
